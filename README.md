@@ -3,9 +3,9 @@ Tools related to mathematical models and their applications for estimating the k
 
 - Example gel image ([gel.tif](gel.tif)) and pre-processed text ([converted.txt](converted.txt)). Briefly, a synthetic RNA sequence of seven nucleotides (5′-UCUACAU-3′) and a 20 adenosine stretch (A20) was used as a substrate to assess the deadenylation reaction of the full human CNOT complex. Other synthetic RNAs such as A1, A0, and UCU were used as size markers. The first two lanes are the marker and control lanes used during the image processing steps. The neighboring gel lanes correspond to deadenylation reactions after predefined time points such as 2 minutes, 4 minutes, 6 minutes, and 8 minutes.
 
-- Example script for data analysis ([script.R](script.R))
+- Example script for data analysis: [script.R](script.R)
 
-- Example script for computer simulation ([simulate.R](simulate.R))
+- Example script for computer simulation: [simulate.R](simulate.R)
 
 ## Custom R functions ([deadenylation.R](deadenylation.R))
 
