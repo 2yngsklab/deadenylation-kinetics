@@ -11,14 +11,14 @@ Tools related to mathematical models and their applications for estimating the k
 
 ### Parameter estimation
 `rxnrate`: The `rxnrate` (Reaction Rate) function defines the mathematical model for a sequence of deadenylation events and is used as input for the ODE solver. As input, this function takes three parameters: 
-1. list of the time points of interest,
-2. concentration of each RNA species, and 
-3. the rate parameters for each deadenylation event.
+1. List of the time points of interest,
+2. Concentration of each RNA species, and 
+3. The rate parameters for each deadenylation event.
 
 `simulation`: The `simulation` function computes the concentration of each RNA species for a given time point and solves the ODE defined by the `rxnrate` function. As input, this function takes three parameters: 
-1. the rate parameters for each deadenylation event, 
-2. the length of synthetic RNA (i.e., the number of RNA species), and 
-3. the list of time points of interest.
+1. The rate parameters for each deadenylation event, 
+2. The length of synthetic RNA (i.e., the number of RNA species), and 
+3. The list of time points of interest.
 
 `ssq`: The `ssq` (Sum of Squared Residuals) function calculates the difference between the predicted and observed concentrations of each RNA species and is key for the LM routine in the `minpack.lm` R package. As input, this function takes the preprocessed image data and the rate parameters for each deadenylation event. The function generates the predicted concentration by the simulation function.
 
